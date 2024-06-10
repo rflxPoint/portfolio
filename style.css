@@ -1,0 +1,68 @@
+title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+text {
+  text-wrap: wrap;
+}
+
+h5  {
+  margin-top: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: 4% each-line;
+}
+
+body { /*no dot for generic apply*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5vw;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+  image-resolution: 5vw;
+  background: url(bottomcorner.jpg) bottom right no-repeat, url(topcorner.jpg) top left no-repeat;
+  /* background: rgb(0,255,165);
+  background: linear-gradient(135deg, rgba(0,255,165,0) 0%, rgba(0,255,165,0) 20%, rgba(0,255,165,0.5) 35%, rgba(0,162,255,05) 65%, rgba(0,162,255,0) 80%, rgba(0,162,255,0) 100%; [This BG w/ the corners screws over the entire thing]*/
+  background-size: 40%;
+}
+
+div{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.75vw;
+}
+
+img {
+  width: 80%; /*keep one static (width) and the other as auto (height) so res changes dyanmically with screen size*/
+  height: auto;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover { /*must come AFTER 'link' and 'visited'*/
+  color: aquamarine;
+}
+
+.content-container { /*dot for a named class*/
+ display: grid;
+ grid-template-columns: 50% 50%;
+}
+
+.mainpagepara {
+  font-size: 2.5vw;
+}
+
+.entrypoint {
+  text-align: justify;
+}
